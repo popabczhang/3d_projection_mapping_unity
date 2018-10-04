@@ -173,6 +173,108 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &63769292
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &63769293 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 63769292}
+--- !u!1001 &112725629
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.309
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &112725630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 112725629}
 --- !u!1 &114371430
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +426,312 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &188312601
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.589
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &188312602 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 188312601}
+--- !u!1001 &242957122
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.559
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &242957123 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 242957122}
+--- !u!1001 &257935763
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.559
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &257935764 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 257935763}
+--- !u!1001 &292784106
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &292784107 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 292784106}
+--- !u!1001 &331174843
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.592
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &331174844 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 331174843}
+--- !u!1001 &335661614
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &335661615 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 335661614}
 --- !u!1 &416595669
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +758,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1285222360}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &429251449
 GameObject:
@@ -509,13 +917,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.39799687, y: 0.19473732, z: -0.08686318, w: 0.89226156}
+  m_LocalPosition: {x: 0.53, y: 1.61, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 48.079002, y: 24.624, z: 0}
 --- !u!1001 &537454658
 Prefab:
   m_ObjectHideFlags: 0
@@ -525,7 +933,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.144
+      value: 0.19399999
       objectReference: {fileID: 0}
     - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -533,7 +941,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.448
       objectReference: {fileID: 0}
     - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -572,7 +980,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
       propertyPath: m_LocalPosition.y
@@ -580,7 +988,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.448
       objectReference: {fileID: 0}
     - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
       propertyPath: m_LocalRotation.x
@@ -668,7 +1076,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b448964a39280f04881eadb5900488a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -709,7 +1117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &604699785
 Transform:
   m_ObjectHideFlags: 0
@@ -724,6 +1132,195 @@ Transform:
   m_Father: {fileID: 40532149}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619077491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619077492}
+  - component: {fileID: 619077495}
+  - component: {fileID: 619077494}
+  - component: {fileID: 619077493}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619077492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619077491}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.95, y: -0, z: 0.519}
+  m_LocalScale: {x: 1.9, y: 1.038, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1880651193}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!64 &619077493
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619077491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &619077494
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619077491}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 885a418aaac98124c821a201f3cb68c6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &619077495
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619077491}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &754673406
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.805
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &754673407 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 754673406}
+--- !u!1001 &820852596
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.559
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.16100001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &820852597 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 820852596}
 --- !u!1 &841086879
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +1335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &841086880
 Transform:
   m_ObjectHideFlags: 0
@@ -753,6 +1350,363 @@ Transform:
   m_Father: {fileID: 12203869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &877403347
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.736
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &877403348 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 877403347}
+--- !u!1001 &1020605606
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.446
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1020605607 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1020605606}
+--- !u!1001 &1026341868
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.7030001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.16100001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1026341869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1026341868}
+--- !u!1001 &1029421461
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.949
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1029421462 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1029421461}
+--- !u!1001 &1041100404
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.309
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1041100405 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1041100404}
+--- !u!1001 &1110982069
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.165
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1110982070 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1110982069}
+--- !u!1001 &1133376306
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.165
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1133376307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1133376306}
 --- !u!1 &1186621189
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,13 +1729,41 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1186621189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.788, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 537463265}
   - {fileID: 537454659}
+  - {fileID: 331174844}
+  - {fileID: 1658789155}
+  - {fileID: 877403348}
+  - {fileID: 1664781022}
+  - {fileID: 257935764}
+  - {fileID: 1448088251}
+  - {fileID: 242957123}
+  - {fileID: 1498852351}
+  - {fileID: 820852597}
+  - {fileID: 1026341869}
+  - {fileID: 2109032936}
+  - {fileID: 1758474336}
+  - {fileID: 292784107}
+  - {fileID: 188312602}
+  - {fileID: 1020605607}
+  - {fileID: 1470484469}
+  - {fileID: 335661615}
+  - {fileID: 1673174066}
+  - {fileID: 63769293}
+  - {fileID: 1382166715}
+  - {fileID: 754673407}
+  - {fileID: 1029421462}
+  - {fileID: 1041100405}
+  - {fileID: 2021711104}
+  - {fileID: 1412997418}
+  - {fileID: 1110982070}
+  - {fileID: 112725630}
+  - {fileID: 1133376307}
   m_Father: {fileID: 1285222360}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1279567401
 GameObject:
@@ -809,8 +1791,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1279567401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.036, y: 0.005, z: 0.036}
-  m_LocalScale: {x: 0.072, y: 0.01, z: 0.072}
+  m_LocalPosition: {x: 0.95, y: 0.005, z: 0.519}
+  m_LocalScale: {x: 1.152, y: 0.01, z: 0.72}
   m_Children: []
   m_Father: {fileID: 841086880}
   m_RootOrder: 0
@@ -905,11 +1887,165 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1880651193}
   - {fileID: 1186621190}
   - {fileID: 416595670}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1382166714
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.95000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1382166715 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1382166714}
+--- !u!1001 &1412997417
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.3080001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1412997418 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1412997417}
+--- !u!1001 &1448088250
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.7030001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1448088251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1448088250}
 --- !u!1 &1469711722
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +2075,108 @@ Transform:
   m_Father: {fileID: 40532149}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1470484468
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.59000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1470484469 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1470484468}
+--- !u!1001 &1498852350
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.7030001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1498852351 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1498852350}
 --- !u!1 &1625506844
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +2235,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b448964a39280f04881eadb5900488a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1024,6 +2262,290 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625506844}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1658789154
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.19399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.592
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1658789155 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1658789154}
+--- !u!1001 &1664781021
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.19399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.736
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1664781022 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1664781021}
+--- !u!1001 &1673174065
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.95000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1673174066 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1673174065}
+--- !u!1001 &1758474335
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.59000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1758474336 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1758474335}
+--- !u!1 &1880651192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1880651193}
+  m_Layer: 0
+  m_Name: Table Top Drawing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1880651193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1880651192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.788, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 619077492}
+  m_Father: {fileID: 1285222360}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2021711103
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.164
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501121369063892, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab High Rise (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e2efb8ae70b693469ed52961017a97c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &2021711104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4421793931468550, guid: 4e2efb8ae70b693469ed52961017a97c,
+    type: 2}
+  m_PrefabInternal: {fileID: 2021711103}
 --- !u!1 &2095596355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,3 +2575,54 @@ Transform:
   m_Father: {fileID: 40532149}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2109032935
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1186621190}
+    m_Modifications:
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.446
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.669
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054839275526756, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+      propertyPath: m_Name
+      value: Lego Building Model Prefab Low Rise (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf97b331930c9c242b8c414799fcc8b9, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &2109032936 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4594354188273152, guid: bf97b331930c9c242b8c414799fcc8b9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2109032935}
