@@ -6,13 +6,13 @@ public class VectorBilinearInterpolationMesh : MonoBehaviour {
 
     public GameObject[] OriginBoxKeyPts;
     public GameObject[] TargetBoxKeyPts;
-    public GameObject TestMeshInput;
-    public GameObject TestMeshOutput;
+    public GameObject TestMeshInput, TestMeshOutput;
 
     private Vector3 a1, b1, c1, d1, e1, f1, g1, h1, a2, b2, c2, d2, e2, f2, g2, h2;
-    private Mesh t1, t2;
+    private Vector3 t1, t2;
     private float u, v, w;
 
+    // for performance, need to be changed to only when moving key pts!!!
     void Update () {
 
         a1 = OriginBoxKeyPts[0].transform.position;
@@ -24,17 +24,6 @@ public class VectorBilinearInterpolationMesh : MonoBehaviour {
         g1 = OriginBoxKeyPts[6].transform.position;
         h1 = OriginBoxKeyPts[7].transform.position;
 
-        /*
-        t1 = TestPtInput.transform.position;
-
-        u = (t1[0] - a1[0]) / (b1[0] - a1[0]);
-        //Debug.Log(string.Format("u = {0}", u));
-        v = (t1[2] - a1[2]) / (d1[2] - a1[2]);
-        //Debug.Log(string.Format("v = {0}", v));
-        w = (t1[1] - a1[1]) / (e1[1] - a1[1]);
-        //Debug.Log(string.Format("w = {0}", w));
-        */
-
         a2 = TargetBoxKeyPts[0].transform.position;
         b2 = TargetBoxKeyPts[1].transform.position;
         c2 = TargetBoxKeyPts[2].transform.position;
@@ -44,10 +33,32 @@ public class VectorBilinearInterpolationMesh : MonoBehaviour {
         g2 = TargetBoxKeyPts[6].transform.position;
         h2 = TargetBoxKeyPts[7].transform.position;
 
-        /*
-        t2 = BoxLerp(a2, b2, c2, d2, e2, f2, g2, h2, u, v, w);
-        TestPtOutput.transform.position = t2;
-        */
+        // modify mesh vertices
+        Mesh meshInput = TestMeshInput.GetComponent<MeshFilter>().mesh;
+        Vector3[] verticesInput = meshInput.vertices;
+        //Vector3[] normals = meshInput.normals;
+        Mesh meshOutput = TestMeshOutput.GetComponent<MeshFilter>().mesh;
+        Vector3[] verticesOutput = meshOutput.vertices;
+        int i = 0;
+        while (i < verticesInput.Length) // loop each vertex
+        {
+            //vertices[i] += normals[i] * Mathf.Sin(Time.time) * 0.001f;    // a loop animation
+            //float s = 0.001f;
+            //vertices[i] += new Vector3(Random.Range(-s, s), Random.Range(-s, s), Random.Range(-s, s));  // add random noise
+            
+            t1 = TestMeshInput.transform.TransformPoint(verticesInput[i]);
+
+            u = (t1[0] - a1[0]) / (b1[0] - a1[0]);
+            v = (t1[2] - a1[2]) / (d1[2] - a1[2]);
+            w = (t1[1] - a1[1]) / (e1[1] - a1[1]);
+            
+            t2 = BoxLerp(a2, b2, c2, d2, e2, f2, g2, h2, u, v, w);
+
+            verticesOutput[i] = TestMeshOutput.transform.InverseTransformPoint(t2);
+
+            i++;
+        }
+        meshOutput.vertices = verticesOutput;
         
 
     }
