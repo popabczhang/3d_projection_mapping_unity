@@ -21,8 +21,12 @@ To be updated...
 
 ## Oct 5th, 2018
 * Tested first 3D projection mapping on test table (CityMatrix) with only camera position but no box morph(3D keystone). It was a great success: 3D geometry and physical Lego building perfectly matched.  
-gif 1 (to be uploaded)  
+![](https://github.com/popabczhang/3d_projection_mapping_unity/blob/master/doc/181005_3d-projection-by-positioning-camera.gif)
 
 ## Oct 6th, 2018
 * Programmed the mesh box morph (3D Keystone) for 3D projection mapping detailed calibration. User can control 8 key points of a bounding box to morph/twist the mesh geometry propotionally. This is a technical milestone for the success of the exhibition. The math behind is vector bilinear interpolation ([ref link](https://forum.unity.com/threads/vector-bilinear-interpolation-of-a-square-grid.205644/)). Pure C# code by Ryan Yan Zhang, no Unity Assets needed.  
 ![](https://github.com/popabczhang/3d_projection_mapping_unity/blob/master/doc/181006_mesh%20box%20morph%20test.gif)
+
+## Oct 4th, 2018
+* Applied 8 point box morph on CityMatrix test table and the result is very promising. 
+<img src="https://github.com/popabczhang/3d_projection_mapping_unity/blob/master/doc/181008_box%20morph%20on%20citymatrix.jpg" width="1000">
