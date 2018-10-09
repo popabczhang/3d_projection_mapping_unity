@@ -27,6 +27,11 @@ To be updated...
 * Programmed the mesh box morph (3D Keystone) for 3D projection mapping detailed calibration. User can control 8 key points of a bounding box to morph/twist the mesh geometry propotionally. This is a technical milestone for the success of the exhibition. The math behind is vector bilinear interpolation ([ref link](https://forum.unity.com/threads/vector-bilinear-interpolation-of-a-square-grid.205644/)). Pure C# code by Ryan Yan Zhang, no Unity Assets needed.  
 ![](https://github.com/popabczhang/3d_projection_mapping_unity/blob/master/doc/181006_mesh%20box%20morph%20test.gif)
 
-## Oct 4th, 2018
+## Oct 7th, 2018
+* Added a quick test script for slider scanning via webcam, working greatly. This test is conducted according to the discussion with Carson Smuts. It could be an alternative/backup plan other than python scanner Ariel Noyman is developing. The advantage is performance and stability as a result of software integrity.  
+![](https://github.com/popabczhang/3d_projection_mapping_unity/blob/master/doc/181007_slider-scanning-test.gif)
+
+## Oct 8th, 2018
 * Applied 8 point box morph on CityMatrix test table and the result is very promising. 
 <img src="https://github.com/popabczhang/3d_projection_mapping_unity/blob/master/doc/181008_box%20morph%20on%20citymatrix.jpg" width="1000">
+
