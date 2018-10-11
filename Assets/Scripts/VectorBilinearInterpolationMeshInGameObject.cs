@@ -15,6 +15,19 @@ public class VectorBilinearInterpolationMeshInGameObject : MonoBehaviour {
     private Vector3 t1, t2;
     private float u, v, w;
 
+
+    private void Start()
+    {
+
+        // duplicate the InputParentGO as OutputParentGO
+        OutputParentGO = Instantiate(InputParentGO, InputParentGO.transform.parent);
+
+        // disable the InputParentGO
+        InputParentGO.SetActive(false);
+
+    }
+
+
     // for performance, need to be changed to only when moving key pts!!!
     void Update () {
 
