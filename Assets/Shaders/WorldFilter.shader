@@ -48,7 +48,7 @@
 				float dotProd1 = dot(worldPos - _FilterPosition, _FilterNormal);
 				return dotProd1 > 0;
 			}
-			
+
 			v2f vert (appdata v)
 			{
 				v2f o;
@@ -64,9 +64,8 @@
 			fixed4 frag (v2f i) : SV_Target
 			{
 				if (checkVisability(i.worldPos))discard;
-				
 				// sample the texture
-				fixed4 col = tex2D(_MainTex, i.uv);
+				fixed4 col = tex2D(_MainTex, i.uv) + step(0, dot(i.worldPos - (_FilterPosition - _FilterNormal * 0.001), _FilterNormal)) * fixed4(1, 1, 1, 1);
 				// apply fog
 				UNITY_APPLY_FOG(i.fogCoord, col);
 				return col;
