@@ -44,3 +44,11 @@ Animation in the image above is from Maitana Iruretagoyena.
 ![](https://github.com/popabczhang/3d_projection_mapping_unity/blob/master/doc/181010_box-morph-anim.gif)  
 * Box-morph script updated so that it automatically clone the origianl parent gameobject that you would like to morph and morph the cloned one. It diactivate the origianl gameobject automatically. 
 * Update the table top drawing mesh from quad to plan(10x10 grid) so that the box morph can work correctly. Quad has to few vertices, when morph, the distortion is not smooth. 
+
+## Oct 12th, 2018
+* Cooper-Hewitt test table in MIT Media Lab calibrated  
+* Gabi's good bad world building top anims  
+* Added World A B Filter effect via shader  
+  * white seperation edge for world filter via shader  
+  
+![](https://github.com/popabczhang/3d_projection_mapping_unity/blob/master/doc/181012_world-filter-gabi-anim.gif)  
