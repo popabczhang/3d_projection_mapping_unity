@@ -9,9 +9,21 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
     public GameObject filterSlider;
     public GameObject inputParentGO;
 
+    public float speed = 0.2f;
+
     void Update()
     {
-        //UpdateShaderProperties();
+        if (filterSlider.transform.position[0] < 0.2f)
+        {
+            speed = Mathf.Abs(speed);
+        }
+        else if (filterSlider.transform.position[0] > 1.7f)
+        {
+            speed = -Mathf.Abs(speed);
+        }
+        filterSlider.transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
+
+
 
         // find all GO in inputParentGO and add to inputGOList
         List<GameObject> inputGOList = new List<GameObject>();
