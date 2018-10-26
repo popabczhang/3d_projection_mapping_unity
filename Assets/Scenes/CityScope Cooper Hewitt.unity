@@ -4771,11 +4771,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 328715911884030048, guid: 5a97c667e29a1b54eb04c6b60e2dd8cd,
-        type: 2}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 8400000, guid: e0f8d3c66c437c74b8cbfe0d4376eedf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a97c667e29a1b54eb04c6b60e2dd8cd, type: 2}
   m_IsPrefabAsset: 0
