@@ -2732,6 +2732,48 @@ VideoPlayer:
   m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
+--- !u!1 &526336954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526336956}
+  - component: {fileID: 526336955}
+  m_Layer: 0
+  m_Name: Scanning Data Parser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &526336955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526336954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c4c9c75ac7ec3458b71b31429010d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExampleJsonFilePath: Assets/Resources/Example Building Scanning Data.txt
+  JsonData: 
+--- !u!4 &526336956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526336954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.518, y: 0.82574356, z: 0.735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &532025775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3922,7 +3964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &840843995
 Transform:
   m_ObjectHideFlags: 0
@@ -5392,6 +5434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1186621190}
+  - component: {fileID: 1186621191}
   m_Layer: 0
   m_Name: Buildings
   m_TagString: Untagged
@@ -5415,6 +5458,37 @@ Transform:
   m_Father: {fileID: 1285222360}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1186621191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1186621189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a3b292f599b774ba639891eb964cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingPositions:
+  - {fileID: 128666704}
+  - {fileID: 1417733187}
+  - {fileID: 1337432156}
+  - {fileID: 1827639565}
+  - {fileID: 602800841}
+  - {fileID: 291588512}
+  - {fileID: 281442211}
+  - {fileID: 1694845296}
+  - {fileID: 1440545841}
+  - {fileID: 355635841}
+  - {fileID: 2085698807}
+  - {fileID: 1364997804}
+  - {fileID: 599552580}
+  - {fileID: 1829798727}
+  - {fileID: 1017262144}
+  - {fileID: 1405369037}
+  - {fileID: 1372845615}
+  - {fileID: 517601092}
+  scanningDataParser: {fileID: 526336955}
 --- !u!1 &1220962601
 GameObject:
   m_ObjectHideFlags: 0
