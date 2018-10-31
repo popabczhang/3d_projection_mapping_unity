@@ -2740,6 +2740,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 526336956}
+  - component: {fileID: 526336957}
   - component: {fileID: 526336955}
   m_Layer: 0
   m_Name: Scanning Data Parser
@@ -2761,6 +2762,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExampleJsonFilePath: Assets/Resources/Example Building Scanning Data.txt
   JsonData: 
+  udpListener: {fileID: 526336957}
+  useUDP: 1
 --- !u!4 &526336956
 Transform:
   m_ObjectHideFlags: 0
@@ -2774,6 +2777,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &526336957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526336954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df1e997224968c4ba9396e0f96bf6c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 5005
+  sleepTime: 5
+  _encodedUDP: 
 --- !u!1 &532025775
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,6 +6044,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  prevTypeList: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  prevRotList: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  changedList: 000000000000000000000000000000000000
 --- !u!4 &1290032717
 Transform:
   m_ObjectHideFlags: 0

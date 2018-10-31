@@ -51,7 +51,7 @@ public class BuildingInstantiator : MonoBehaviour {
                 Debug.Log("changed");
             }
         }
-        
+
 
         /*
         // instantiate buildings
@@ -68,5 +68,9 @@ public class BuildingInstantiator : MonoBehaviour {
             }
         }
         */
+
+
+        prevTypeList = scanningDataParser.grid.typeList;
+        prevRotList = scanningDataParser.grid.rotList;
     }
 }

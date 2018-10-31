@@ -44,7 +44,7 @@ public class UDP_Listener : MonoBehaviour
             {
                 byte[] _udpBytes = _UdpClient.Receive(ref _IpEndPoint);
                 _encodedUDP = Encoding.ASCII.GetString(_udpBytes);
-                print(" UDP packet: " + _encodedUDP + '\n');
+                //Debug.Log(" UDP packet: " + _encodedUDP + '\n');
             }
             catch (Exception e)
             {
