@@ -14,9 +14,8 @@ public class VectorBilinearInterpolationMeshInGameObject : MonoBehaviour {
     private Vector3 a1, b1, c1, d1, e1, f1, g1, h1, a2, b2, c2, d2, e2, f2, g2, h2;
     private Vector3 t1, t2;
     private float u, v, w;
-
-
-    private void Start()
+    
+    void Start()
     {
 
         // duplicate the InputParentGO as OutputParentGO
@@ -26,9 +25,7 @@ public class VectorBilinearInterpolationMeshInGameObject : MonoBehaviour {
         InputParentGO.SetActive(false);
 
     }
-
-
-    // for performance, need to be changed to only when moving key pts!!!
+    
     void Update () {
 
         a1 = OriginBoxKeyPts[0].transform.position;
@@ -98,9 +95,7 @@ public class VectorBilinearInterpolationMeshInGameObject : MonoBehaviour {
         }
 
     }
-
-
-
+    
     // Thanks to Brian-Stone's answer
     // https://forum.unity.com/threads/vector-bilinear-interpolation-of-a-square-grid.205644/
 
