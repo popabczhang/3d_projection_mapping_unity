@@ -7,7 +7,7 @@ public class ScanningDataParser : MonoBehaviour {
 
     public string ExampleJsonFilePath = "Assets/Resources/Example Building Scanning Data.txt";
     public string JsonData;
-    public Grid grid = new Grid();
+    public Grid grid;
 
     public UDP_Listener udpListener;
     public bool useUDP = false;
@@ -18,7 +18,7 @@ public class ScanningDataParser : MonoBehaviour {
         JsonData = reader.ReadToEnd();
         //Debug.Log(JsonData);
         reader.Close();
-
+        
         // if use udp
         if (useUDP)
         {
@@ -43,6 +43,8 @@ public class ScanningDataParser : MonoBehaviour {
         int i2 = JsonData.IndexOf("]]}");
         string sub = JsonData.Substring(i1 + 10, i2 - (i1 + 10));
         string[] subs = sub.Split(new string[] {"],["}, System.StringSplitOptions.None);
+        // generate grid
+        grid = new Grid();
         int i = 0;
         foreach (string s in subs)
         {
@@ -51,8 +53,6 @@ public class ScanningDataParser : MonoBehaviour {
             b.type = int.Parse(sp[0]);
             b.rot = int.Parse(sp[1]);
             grid.buildings.Add(b);
-            grid.typeList[i] = b.type;
-            grid.rotList[i] = b.rot;
             i ++;
         }
         //Debug.Log(grid);
@@ -76,6 +76,8 @@ public class ScanningDataParser : MonoBehaviour {
                 int i2 = JsonData.IndexOf("]]}");
                 string sub = JsonData.Substring(i1 + 10, i2 - (i1 + 10));
                 string[] subs = sub.Split(new string[] { "],[" }, System.StringSplitOptions.None);
+                // regenerate grid
+                grid = new Grid();
                 int i = 0;
                 foreach (string s in subs)
                 {
@@ -84,8 +86,6 @@ public class ScanningDataParser : MonoBehaviour {
                     b.type = int.Parse(sp[0]);
                     b.rot = int.Parse(sp[1]);
                     grid.buildings.Add(b);
-                    grid.typeList[i] = b.type;
-                    grid.rotList[i] = b.rot;
                     i++;
                 }
             }
@@ -95,14 +95,12 @@ public class ScanningDataParser : MonoBehaviour {
     public class Grid
     {
         public List<Building> buildings = new List<Building>();
-        public int[] typeList = new int[18];
-        public int[] rotList = new int[18];
     }
 
     public class Building
     {
         public int type = -1;
-        public int rot = 0;
+        public int rot = -1;
     }
 
 }

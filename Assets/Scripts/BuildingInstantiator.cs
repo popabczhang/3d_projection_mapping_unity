@@ -13,11 +13,13 @@ public class BuildingInstantiator : MonoBehaviour {
     public GameObject[] bldgGOsGood = new GameObject[18];
     public GameObject[] bldgGOsBad = new GameObject[18];
 
-    public int[] prevTypeList = new int[18];
-    public int[] prevRotList = new int[18];
+    public int[] currentTypeList = new int[18];
+    public int[] currentRotList = new int[18];
     public bool[] changedList = new bool[18];
 
-    void Start () {
+    void Start ()
+    {
+        /*
         // instantiate buildings
         for (int i = 0; i < scanningDataParser.grid.buildings.Count; i ++)
         {
@@ -31,46 +33,52 @@ public class BuildingInstantiator : MonoBehaviour {
                 bldgGOsBad[i] = Instantiate(buildingPrefabsBad[b.type], buildingPositions[i].transform.position, buildingPositions[i].transform.rotation, bldgParent.transform);
             }
         }
+        */
 
-        // save prev values for compareson
-        prevTypeList = scanningDataParser.grid.typeList;
-        prevRotList = scanningDataParser.grid.rotList;
-}
-
-    void Update () {
-        // compare type and rot list
+        // initiate current frame values with -1
         for (int i = 0; i < 18; i++)
         {
-            if (scanningDataParser.grid.typeList[i] == prevTypeList[i] && scanningDataParser.grid.rotList[i] == prevRotList[i])
+            currentTypeList[i] = -1;
+            currentRotList[i] = -1;
+        }
+
+        // WRONG! This will do reference overwrite
+        //currentTypeList = scanningDataParser.grid.typeList;  
+        //currentRotList = scanningDataParser.grid.rotList;
+    }
+
+    void Update ()
+    {
+        // compare current frame list values of type and rot with latest UDP json feed
+        for (int i = 0; i < 18; i++)
+        {
+            int type = scanningDataParser.grid.buildings[i].type;
+            int rot = scanningDataParser.grid.buildings[i].rot;
+
+            if (currentTypeList[i] == type && currentRotList[i] == rot)
             {
                 changedList[i] = false;
+                //Debug.Log("unchanged");
             }
             else
             {
                 changedList[i] = true;
-                Debug.Log("changed");
+                //Debug.Log("changed");
+                currentTypeList[i] = type;
+                currentRotList[i] = rot;
+
+                // remove current building GO and instantiate latest one
+                Destroy(bldgGOsGood[i]);
+                Destroy(bldgGOsBad[i]);
+
+                if (type != -1 && buildingPrefabsGood[type] != null)
+                {
+                    //Debug.Log(string.Format("instantiating building {0} in the grid with type {1}, rot {2}", i, type, 0));
+                    //////////////////////////// rotation not done yet /////////////////////////////////////////////////////
+                    bldgGOsGood[i] = Instantiate(buildingPrefabsGood[type], buildingPositions[i].transform.position, buildingPositions[i].transform.rotation, bldgParent.transform);
+                    bldgGOsBad[i] = Instantiate(buildingPrefabsBad[type], buildingPositions[i].transform.position, buildingPositions[i].transform.rotation, bldgParent.transform);
+                }
             }
         }
-
-
-        /*
-        // instantiate buildings
-        for (int i = 0; i < scanningDataParser.grid.buildings.Count; i++)
-        {
-            //Debug.Log(string.Format("i = {0}", i));
-            ScanningDataParser.Building b = scanningDataParser.grid.buildings[i];
-            //Debug.Log(string.Format("b = {0}", b));
-            if (b.type != -1 && buildingPrefabsGood[b.type] != null)
-            {
-                //Debug.Log(string.Format("instantiating building {0} in the grid", i));
-                bldgGOsGood[i] = Instantiate(buildingPrefabsGood[b.type], buildingPositions[i].transform.position, buildingPositions[i].transform.rotation, bldgParent.transform);
-                bldgGOsBad[i] = Instantiate(buildingPrefabsBad[b.type], buildingPositions[i].transform.position, buildingPositions[i].transform.rotation, bldgParent.transform);
-            }
-        }
-        */
-
-
-        prevTypeList = scanningDataParser.grid.typeList;
-        prevRotList = scanningDataParser.grid.rotList;
     }
 }
