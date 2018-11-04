@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: building 00-11 good
+  m_Name: building 00-15 good
   m_Shader: {fileID: 4800000, guid: 34b0931d6bbee804aa1b9e3a84b13620, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
