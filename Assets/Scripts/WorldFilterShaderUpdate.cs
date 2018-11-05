@@ -11,19 +11,28 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
 
     public float speed = 0.2f;
 
+    public bool auto = true;
+    public float xLeft = 0.37f;
+    public float xRight = 1.53f;
+
     void Update()
     {
-        if (filterSlider.transform.position[0] < 0.2f)
+        // auto moving mode for filter
+        if (auto)
         {
-            speed = Mathf.Abs(speed);
+            if (filterSlider.transform.position[0] < 0.2f)
+            {
+                speed = Mathf.Abs(speed);
+            }
+            else if (filterSlider.transform.position[0] > 1.7f)
+            {
+                speed = -Mathf.Abs(speed);
+            }
+            filterSlider.transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
         }
-        else if (filterSlider.transform.position[0] > 1.7f)
-        {
-            speed = -Mathf.Abs(speed);
-        }
-        filterSlider.transform.Translate(Vector3.right * speed * Time.deltaTime, Space.World);
 
 
+        // Update all gameobject's shader property
 
         // find all GO in inputParentGO and add to inputGOList
         List<GameObject> inputGOList = new List<GameObject>();
@@ -43,6 +52,20 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
             Vector3 position = filterSlider.transform.position;
             rend.material.SetVector("_FilterPosition", position);
         }
+    }
+
+    public void SetFilterPosition(float sliderValue)
+    {
+        auto = false;
+        float x = xLeft + (xRight - xLeft) * sliderValue;
+        float y = filterSlider.transform.position.y;
+        float z = filterSlider.transform.position.z;
+        filterSlider.transform.SetPositionAndRotation(new Vector3(x, y, z), filterSlider.transform.rotation);
+    }
+
+    public void AutoFilterPosition(bool setAuto)
+    {
+        auto = true;
     }
 
 }
