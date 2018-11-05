@@ -92,6 +92,12 @@ public class ScanningDataParser : MonoBehaviour {
         }
     }
 
+    // for UI debug use udp
+    public void toggleUseUDP(bool toggleValue)
+    {
+        useUDP = toggleValue;
+    }
+
     public class Grid
     {
         public List<Building> buildings = new List<Building>();
