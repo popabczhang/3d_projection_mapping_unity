@@ -17,12 +17,12 @@ public class VectorBilinearInterpolation : MonoBehaviour {
 
         a1 = OriginBoxKeyPts[0].transform.position;
         b1 = OriginBoxKeyPts[1].transform.position;
-        c1 = OriginBoxKeyPts[2].transform.position;
+        //c1 = OriginBoxKeyPts[2].transform.position;
         d1 = OriginBoxKeyPts[3].transform.position;
         e1 = OriginBoxKeyPts[4].transform.position;
-        f1 = OriginBoxKeyPts[5].transform.position;
-        g1 = OriginBoxKeyPts[6].transform.position;
-        h1 = OriginBoxKeyPts[7].transform.position;
+        //f1 = OriginBoxKeyPts[5].transform.position;
+        //g1 = OriginBoxKeyPts[6].transform.position;
+        //h1 = OriginBoxKeyPts[7].transform.position;
         t1 = TestPtInput.transform.position;
 
         u = (t1[0] - a1[0]) / (b1[0] - a1[0]);

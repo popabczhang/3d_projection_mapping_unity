@@ -30,12 +30,12 @@ public class VectorBilinearInterpolationMeshInGameObject : MonoBehaviour {
 
         a1 = OriginBoxKeyPts[0].transform.position;
         b1 = OriginBoxKeyPts[1].transform.position;
-        c1 = OriginBoxKeyPts[2].transform.position;
+        //c1 = OriginBoxKeyPts[2].transform.position;
         d1 = OriginBoxKeyPts[3].transform.position;
         e1 = OriginBoxKeyPts[4].transform.position;
-        f1 = OriginBoxKeyPts[5].transform.position;
-        g1 = OriginBoxKeyPts[6].transform.position;
-        h1 = OriginBoxKeyPts[7].transform.position;
+        //f1 = OriginBoxKeyPts[5].transform.position;
+        //g1 = OriginBoxKeyPts[6].transform.position;
+        //h1 = OriginBoxKeyPts[7].transform.position;
 
         a2 = TargetBoxKeyPts[0].transform.position;
         b2 = TargetBoxKeyPts[1].transform.position;
