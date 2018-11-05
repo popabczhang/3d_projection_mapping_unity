@@ -74,9 +74,8 @@ public class BuildingInstantiator : MonoBehaviour {
                 if (type != -1 && buildingPrefabsGood[type] != null)
                 {
                     //Debug.Log(string.Format("instantiating building {0} in the grid with type {1}, rot {2}", i, type, 0));
-                    //////////////////////////// rotation not done yet /////////////////////////////////////////////////////
-                    bldgGOsGood[i] = Instantiate(buildingPrefabsGood[type], buildingPositions[i].transform.position, buildingPositions[i].transform.rotation, bldgParent.transform);
-                    bldgGOsBad[i] = Instantiate(buildingPrefabsBad[type], buildingPositions[i].transform.position, buildingPositions[i].transform.rotation, bldgParent.transform);
+                    bldgGOsGood[i] = Instantiate(buildingPrefabsGood[type], buildingPositions[i].transform.position, Quaternion.Euler(0.0f, (float)rot * 90.0f, 0.0f), bldgParent.transform);
+                    bldgGOsBad[i] = Instantiate(buildingPrefabsBad[type], buildingPositions[i].transform.position, Quaternion.Euler(0.0f, (float)rot * 90.0f, 0.0f), bldgParent.transform);
                 }
             }
         }
