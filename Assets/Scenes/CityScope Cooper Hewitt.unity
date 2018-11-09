@@ -2794,7 +2794,7 @@ MonoBehaviour:
   ExampleJsonFilePath: Assets/Resources/Example Building Scanning Data.txt
   JsonData: 
   udpListener: {fileID: 526336957}
-  useUDP: 1
+  useUDP: 0
 --- !u!4 &526336956
 Transform:
   m_ObjectHideFlags: 0
@@ -4857,13 +4857,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871263446}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 698af021dc771bf4fafa6c1cbd9bf995, type: 3}
+  m_Script: {fileID: 11500000, guid: 96eb62a8bd0f60441a83114f80ee62c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   boxMorphKeyPts: {fileID: 1432818225}
-  calibrating: 0
 --- !u!1 &872130310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5562,7 +5561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1041368069
 Transform:
   m_ObjectHideFlags: 0
@@ -7369,6 +7368,7 @@ MonoBehaviour:
   currentTypeList: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   currentRotList: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   changedList: 000000000000000000000000000000000000
+  boxMorphKeyPts: {fileID: 1432818225}
 --- !u!4 &1290032717
 Transform:
   m_ObjectHideFlags: 0
@@ -7814,13 +7814,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1375737368}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 698af021dc771bf4fafa6c1cbd9bf995, type: 3}
+  m_Script: {fileID: 11500000, guid: 96eb62a8bd0f60441a83114f80ee62c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   boxMorphKeyPts: {fileID: 1432818225}
-  calibrating: 0
 --- !u!4 &1379771612
 Transform:
   m_ObjectHideFlags: 0
@@ -8217,7 +8216,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1432818222
 Transform:
   m_ObjectHideFlags: 0
@@ -8239,7 +8238,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1432818221}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da2e681c5afd9b2489bfb96fa6a387fd, type: 3}
   m_Name: 
@@ -8272,7 +8271,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1432818221}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da2e681c5afd9b2489bfb96fa6a387fd, type: 3}
   m_Name: 
@@ -8305,12 +8304,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1432818221}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7698b0d05c0a41c409fd9abcc09784bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   calibrating: 0
+  keyPts: {fileID: 1041368068}
   OriginBoxKeyPts:
   - {fileID: 954995651}
   - {fileID: 1179778293}

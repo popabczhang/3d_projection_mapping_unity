@@ -13,30 +13,26 @@ public class BoxMorphGO : MonoBehaviour {
     private MeshFilter meshFilter;
     private Mesh mesh;
     private Mesh meshBK;
+    private Transform meshTransform;
 
     void Start() {
-        if (gameObject.GetComponent<MeshFilter>() != null)
+
+        // find first meshfilter component
+        Transform[] AllChildren = GetComponentsInChildren<Transform>();
+        foreach (Transform Child in AllChildren)
         {
-            // find first meshfilter component
-            Transform[] AllChildren = GetComponentsInChildren<Transform>();
-            foreach (Transform Child in AllChildren)
+            if (Child.gameObject.GetComponent<MeshFilter>() != null)
             {
-                if (Child.gameObject.GetComponent<MeshFilter>() != null)
-                {
-                    meshFilter = Child.gameObject.GetComponent<MeshFilter>();
-                    break;
-                }
+                meshFilter = Child.gameObject.GetComponent<MeshFilter>();
+                meshTransform = Child;
+                break;
             }
-            if (meshFilter != null)
-            {
-                // backup mesh from the meshfilter component
-                mesh = meshFilter.mesh;
-                meshBK = Instantiate<Mesh>(mesh);
-            }
-            else
-            {
-                Debug.LogWarning("gameobject to morph didn't find mesh!!!");
-            }
+        }
+        if (meshFilter != null)
+        {
+            // backup mesh from the meshfilter component
+            mesh = meshFilter.mesh;
+            meshBK = Instantiate<Mesh>(mesh);
         }
         else
         {
@@ -44,7 +40,7 @@ public class BoxMorphGO : MonoBehaviour {
         }
 
         // apply box morph once
-        ApplyBoxMorph(this.gameObject, mesh, meshBK, boxMorphKeyPts);
+        ApplyBoxMorph(meshTransform, mesh, meshBK, boxMorphKeyPts);
     }
 
     // Update is called once per frame
@@ -55,25 +51,21 @@ public class BoxMorphGO : MonoBehaviour {
         // if calibrating, apply box morph once per frame
         if (calibrating)
         {
-            ApplyBoxMorph(this.gameObject, mesh, meshBK, boxMorphKeyPts);
+            ApplyBoxMorph(meshTransform, mesh, meshBK, boxMorphKeyPts);
         }
     }
 
     // function to apply box morph once
-    void ApplyBoxMorph(GameObject GO, Mesh mesh, Mesh meshBK, BoxMorphKeyPts boxMorphKeyPts)
+    void ApplyBoxMorph(Transform meshTransform, Mesh mesh, Mesh meshBK, BoxMorphKeyPts boxMorphKeyPts)
     {
-        Vector3 a1, b1, c1, d1, e1, f1, g1, h1, a2, b2, c2, d2, e2, f2, g2, h2;
+        Vector3 a1, b1, d1, e1, a2, b2, c2, d2, e2, f2, g2, h2;
         Vector3 t1, t2;
         float u, v, w;
 
         a1 = boxMorphKeyPts.a1;
         b1 = boxMorphKeyPts.b1;
-        //c1 = boxMorphKeyPts.c1;
         d1 = boxMorphKeyPts.d1;
         e1 = boxMorphKeyPts.e1;
-        //f1 = boxMorphKeyPts.f1;
-        //g1 = boxMorphKeyPts.g1;
-        //h1 = boxMorphKeyPts.h1;
 
         a2 = boxMorphKeyPts.a2;
         b2 = boxMorphKeyPts.b2;
@@ -91,7 +83,7 @@ public class BoxMorphGO : MonoBehaviour {
         while (i < verticesInput.Length) // loop each vertex
         {
 
-            t1 = GO.transform.TransformPoint(verticesInput[i]);
+            t1 = meshTransform.TransformPoint(verticesInput[i]);
 
             u = (t1[0] - a1[0]) / (b1[0] - a1[0]);
             v = (t1[2] - a1[2]) / (d1[2] - a1[2]);
@@ -99,7 +91,7 @@ public class BoxMorphGO : MonoBehaviour {
 
             t2 = BoxLerp(a2, b2, c2, d2, e2, f2, g2, h2, u, v, w);
 
-            verticesOutput[i] = GO.transform.InverseTransformPoint(t2);
+            verticesOutput[i] = meshTransform.InverseTransformPoint(t2);
 
             i++;
         }

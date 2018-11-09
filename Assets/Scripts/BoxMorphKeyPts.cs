@@ -5,6 +5,7 @@ using UnityEngine;
 public class BoxMorphKeyPts : MonoBehaviour {
 
     public bool calibrating = false;
+    public GameObject keyPts;
 
     public GameObject[] OriginBoxKeyPts;
     public GameObject[] TargetBoxKeyPts;
@@ -64,6 +65,6 @@ public class BoxMorphKeyPts : MonoBehaviour {
     public void ToggleCalibration(bool toggleValue)
     {
         calibrating = toggleValue;
-        this.gameObject.SetActive(toggleValue);
+        keyPts.SetActive(toggleValue);
     }
 }

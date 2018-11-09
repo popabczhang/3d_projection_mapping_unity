@@ -17,6 +17,8 @@ public class BuildingInstantiator : MonoBehaviour {
     public int[] currentRotList = new int[18];
     public bool[] changedList = new bool[18];
 
+    public BoxMorphKeyPts boxMorphKeyPts;
+
     void Start ()
     {
         /*
@@ -75,7 +77,12 @@ public class BuildingInstantiator : MonoBehaviour {
                 {
                     //Debug.Log(string.Format("instantiating building {0} in the grid with type {1}, rot {2}", i, type, 0));
                     bldgGOsGood[i] = Instantiate(buildingPrefabsGood[type], buildingPositions[i].transform.position, Quaternion.Euler(0.0f, (float)rot * 90.0f, 0.0f), bldgParent.transform);
+                    BoxMorphGO c1 = bldgGOsGood[i].AddComponent<BoxMorphGO>();
+                    c1.boxMorphKeyPts = boxMorphKeyPts;
+
                     bldgGOsBad[i] = Instantiate(buildingPrefabsBad[type], buildingPositions[i].transform.position, Quaternion.Euler(0.0f, (float)rot * 90.0f, 0.0f), bldgParent.transform);
+                    BoxMorphGO c2 = bldgGOsBad[i].AddComponent<BoxMorphGO>();
+                    c2.boxMorphKeyPts = boxMorphKeyPts;
                 }
             }
         }
