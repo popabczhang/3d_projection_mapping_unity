@@ -20,11 +20,11 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
         // auto moving mode for filter
         if (auto)
         {
-            if (filterSlider.transform.position[0] < 0.2f)
+            if (filterSlider.transform.position[0] < xLeft)
             {
                 speed = Mathf.Abs(speed);
             }
-            else if (filterSlider.transform.position[0] > 1.7f)
+            else if (filterSlider.transform.position[0] > xRight)
             {
                 speed = -Mathf.Abs(speed);
             }

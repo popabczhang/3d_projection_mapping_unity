@@ -93,7 +93,7 @@ public class ScanningDataParser : MonoBehaviour {
     }
 
     // for UI debug use udp
-    public void toggleUseUDP(bool toggleValue)
+    public void ToggleUseUDP(bool toggleValue)
     {
         useUDP = toggleValue;
     }
