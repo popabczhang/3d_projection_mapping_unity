@@ -14,10 +14,10 @@ public class ScanningDataParser : MonoBehaviour {
 
     void Start () {
         // Read the text from directly from the test.txt file
-        StreamReader reader = new StreamReader(ExampleJsonFilePath);
-        JsonData = reader.ReadToEnd();
+        //StreamReader reader = new StreamReader(ExampleJsonFilePath);
+        //JsonData = reader.ReadToEnd();
         //Debug.Log(JsonData);
-        reader.Close();
+        //reader.Close();
         
         // if use udp
         if (useUDP)
