@@ -35,12 +35,12 @@ public class CamControlByUI : MonoBehaviour {
     {
         if (toggleUI.enabled && camInputMenu.activeInHierarchy)
         {
-            textA.text = string.Format("a = {0}", cam.transform.localPosition.x);
-            textB.text = string.Format("b = {0}", cam.transform.localPosition.y-0.778f);
-            textC.text = string.Format("c = {0}", cam.transform.localPosition.z);
-            textD.text = string.Format("d = {0}", (cam.transform.localEulerAngles.x - 90f) * (-1.0f));
-            textE.text = string.Format("e = {0}", cam.transform.localEulerAngles.z);
-            textF.text = string.Format("f = {0}", cam.GetComponent<Camera>().fieldOfView);
+            textA.text = string.Format("a = {0}", Mathf.Round(cam.transform.localPosition.x*10000f)/10000f);
+            textB.text = string.Format("b = {0}", Mathf.Round((cam.transform.localPosition.y-0.778f) * 10000f) / 10000f);
+            textC.text = string.Format("c = {0}", Mathf.Round(cam.transform.localPosition.z * 10000f) / 10000f);
+            textD.text = string.Format("d = {0}", Mathf.Round(-(cam.transform.localEulerAngles.x - 90f) * 10000f) / 10000f);
+            textE.text = string.Format("e = {0}", Mathf.Round(cam.transform.localRotation.eulerAngles.z * 10000f) / 10000f);
+            textF.text = string.Format("f = {0}", Mathf.Round(cam.GetComponent<Camera>().fieldOfView * 10000f) / 10000f);
         }
     }
 
@@ -172,13 +172,16 @@ public class CamControlByUI : MonoBehaviour {
 
     public void InputA(string value)
     {
+        //Debug.Log(string.Format("value = {0}", value));
         float a = float.Parse(value);
+        //Debug.Log(string.Format("a = {0}", a));
         cam.transform.localPosition = new Vector3(a, cam.transform.localPosition.y, cam.transform.localPosition.z);
     }
 
     public void InputB(string value)
     {
         float b = float.Parse(value);
+        Debug.Log(string.Format("b = {0}", b));
         cam.transform.localPosition = new Vector3(cam.transform.localPosition.x, b+0.778f, cam.transform.localPosition.z);
     }
 
