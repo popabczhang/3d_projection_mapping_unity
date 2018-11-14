@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CamControlByUI : MonoBehaviour {
 
@@ -9,7 +10,16 @@ public class CamControlByUI : MonoBehaviour {
     public float speedRot;
     public float speedFov;
 
-	void Start () {
+    public Toggle toggleUI;
+    public GameObject camInputMenu;
+    public Text textA;
+    public Text textB;
+    public Text textC;
+    public Text textD;
+    public Text textE;
+    public Text textF;
+
+    void Start () {
         cam = gameObject;
 
         SaveReset();
@@ -18,6 +28,19 @@ public class CamControlByUI : MonoBehaviour {
         if (PlayerPrefs.GetFloat("camPosX", 9999f) != 9999f)
         {
             Load();
+        }
+    }
+
+    private void Update()
+    {
+        if (toggleUI.enabled && camInputMenu.activeInHierarchy)
+        {
+            textA.text = string.Format("a = {0}", cam.transform.localPosition.x);
+            textB.text = string.Format("b = {0}", cam.transform.localPosition.y-0.778f);
+            textC.text = string.Format("c = {0}", cam.transform.localPosition.z);
+            textD.text = string.Format("d = {0}", (cam.transform.localEulerAngles.x - 90f) * (-1.0f));
+            textE.text = string.Format("e = {0}", cam.transform.localEulerAngles.z);
+            textF.text = string.Format("f = {0}", cam.GetComponent<Camera>().fieldOfView);
         }
     }
 
@@ -145,6 +168,42 @@ public class CamControlByUI : MonoBehaviour {
         cam.transform.localEulerAngles = new Vector3(rx, ry, rz);
         float fov = PlayerPrefs.GetFloat("camResetFov", cam.GetComponent<Camera>().fieldOfView);
         cam.GetComponent<Camera>().fieldOfView = fov;
+    }
+
+    public void InputA(string value)
+    {
+        float a = float.Parse(value);
+        cam.transform.localPosition = new Vector3(a, cam.transform.localPosition.y, cam.transform.localPosition.z);
+    }
+
+    public void InputB(string value)
+    {
+        float b = float.Parse(value);
+        cam.transform.localPosition = new Vector3(cam.transform.localPosition.x, b+0.778f, cam.transform.localPosition.z);
+    }
+
+    public void InputC(string value)
+    {
+        float c = float.Parse(value);
+        cam.transform.localPosition = new Vector3(cam.transform.localPosition.x, cam.transform.localPosition.y, c);
+    }
+
+    public void InputD(string value)
+    {
+        float d = float.Parse(value);
+        cam.transform.localEulerAngles = new Vector3(90f-d, cam.transform.localEulerAngles.y, cam.transform.localEulerAngles.z);
+    }
+
+    public void InputE(string value)
+    {
+        float e = float.Parse(value);
+        cam.transform.localEulerAngles = new Vector3(cam.transform.localEulerAngles.x, cam.transform.localPosition.y, e);
+    }
+
+    public void InputF(string value)
+    {
+        float f = float.Parse(value);
+        cam.GetComponent<Camera>().fieldOfView = f;
     }
 
 }
