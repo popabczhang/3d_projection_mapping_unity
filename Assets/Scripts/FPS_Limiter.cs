@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Limiter : MonoBehaviour
+public class FPS_Limiter : MonoBehaviour
 {
-    public int targetFrameRate = 30;
+    public int targetFrameRate = 25;
 
     private void Start()
     {
