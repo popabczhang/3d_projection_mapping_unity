@@ -5396,9 +5396,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExampleJsonFilePath: Assets/Resources/Example Building Scanning Data.txt
-  JsonData: '{ "grid": [ [0, 0], [1, 1], [2, 2], [3, 3], [4, 0], [5, 0], [6, 0], [7,
-    0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [1, 0], [2, 0], [3, 0], [4, 0],
-    [5, 0] ] }'
+  JsonData: '{ "grid": [ [23, 0], [22, 1], [21, 2], [20, 3], [4, 0], [5, 0], [6, 0],
+    [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], [15, 0],
+    [16, 0], [17, 0] ] }'
   udpListener: {fileID: 526336957}
   useUDP: 0
 --- !u!4 &526336956
@@ -20355,7 +20355,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2017655148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e85aaf76168b4e4281620ebe64b045f, type: 3}
   m_Name: 
@@ -20418,14 +20418,12 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 0
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
@@ -21231,14 +21229,12 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 0
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1

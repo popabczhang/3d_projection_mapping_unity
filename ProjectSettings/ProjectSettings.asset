@@ -79,9 +79,9 @@ PlayerSettings:
   deferSystemGesturesMode: 0
   hideHomeButton: 0
   submitAnalytics: 1
-  usePlayerLog: 1
+  usePlayerLog: 0
   bakeCollisionMeshes: 0
-  forceSingleInstance: 1
+  forceSingleInstance: 0
   resizableWindow: 1
   useMacAppStoreValidation: 0
   macAppStoreCategory: public.app-category.games
@@ -124,7 +124,11 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 32900000, guid: 33298e2b738a6482ba4142a0a3c7cc8c, type: 3}
+  - {fileID: 32900000, guid: c74acf56864d147bf890dc8be99fecf7, type: 3}
+  - {fileID: 32900000, guid: fbaffd033695b42e2937ad8854a8c1eb, type: 3}
+  - {fileID: 32900000, guid: 1c0c8b12f93cf4dd4aaddadce9e790e2, type: 3}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1

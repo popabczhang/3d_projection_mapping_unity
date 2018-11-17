@@ -73,7 +73,7 @@ public class ScanningDataParser : MonoBehaviour {
                 JsonData = JsonData.Replace(" ", "");
                 //Debug.Log(JsonData);
                 int i1 = JsonData.IndexOf("{\"grid\":[[");
-                int i2 = JsonData.IndexOf("]]}");
+                int i2 = JsonData.IndexOf("]],");
                 string sub = JsonData.Substring(i1 + 10, i2 - (i1 + 10));
                 string[] subs = sub.Split(new string[] { "],[" }, System.StringSplitOptions.None);
                 // regenerate grid
