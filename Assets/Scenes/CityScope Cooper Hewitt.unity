@@ -1924,6 +1924,68 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 182557924}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &195004265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 195004266}
+  - component: {fileID: 195004268}
+  - component: {fileID: 195004267}
+  m_Layer: 0
+  m_Name: Scanning Slider Data Parser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &195004266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 195004265}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.518, y: 0.82574356, z: 0.735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1146747582}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &195004267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 195004265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7362567b661db0b43872ef289987266d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JsonData: '{"grid":[[20, 0], [21, 1], [22, 2], [23, 3], [4, 0], [5, 0], [6, 0],
+    [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], [15, 0],
+    [16, 0], [17, 0]],"slider":[0.5124]}'
+  udpListener: {fileID: 195004268}
+  useUDP: 1
+  sliderValue: 0.5
+  uiSlider: {fileID: 1388399112}
+--- !u!114 &195004268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 195004265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df1e997224968c4ba9396e0f96bf6c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: 5005
+  sleepTime: 5
+  _encodedUDP: 
 --- !u!1 &195247466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5383,7 +5445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &526336955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5396,9 +5458,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExampleJsonFilePath: Assets/Resources/Example Building Scanning Data.txt
-  JsonData: '{ "grid": [ [23, 0], [22, 1], [21, 2], [20, 3], [4, 0], [5, 0], [6, 0],
+  JsonData: '{"grid":[[20, 0], [21, 1], [22, 2], [23, 3], [4, 0], [5, 0], [6, 0],
     [7, 0], [8, 0], [9, 0], [10, 0], [11, 0], [12, 0], [13, 0], [14, 0], [15, 0],
-    [16, 0], [17, 0] ] }'
+    [16, 0], [17, 0]],"slider":[0.5124]}'
   udpListener: {fileID: 526336957}
   useUDP: 1
 --- !u!4 &526336956
@@ -5407,12 +5469,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526336954}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.518, y: 0.82574356, z: 0.735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1146747582}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &526336957
 MonoBehaviour:
@@ -7144,7 +7206,7 @@ RectTransform:
   - {fileID: 139650119}
   - {fileID: 1466019857}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8943,7 +9005,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867272166
 GameObject:
@@ -11692,6 +11754,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1146000120}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1146747581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1146747582}
+  m_Layer: 0
+  m_Name: Data Parser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1146747582
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1146747581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 526336956}
+  - {fileID: 1206799230}
+  - {fileID: 195004266}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1157123496
 GameObject:
   m_ObjectHideFlags: 0
@@ -12243,7 +12336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1206799228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12280,12 +12373,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1206799227}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1146747582}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1210802748
 GameObject:
@@ -12454,7 +12547,7 @@ Transform:
   - {fileID: 1285222360}
   - {fileID: 12203869}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223192985
 GameObject:
@@ -12653,7 +12746,7 @@ Transform:
   m_Children:
   - {fileID: 638342820}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1243378040
 GameObject:
@@ -13249,7 +13342,7 @@ MonoBehaviour:
   - {fileID: 1147779527739558, guid: 289e0ada9e0dad5459d24d7cfa65a687, type: 2}
   - {fileID: 1519464390447578, guid: 00a96bd6773f15b43843b44c1d2fcf02, type: 2}
   - {fileID: 1798466365556352, guid: 7c10c423c1102264b84d4c8ab51e1823, type: 2}
-  scanningDataParser: {fileID: 526336955}
+  scanningSliderDataParser: {fileID: 195004267}
   bldgParent: {fileID: 1186621189}
   bldgGOsGood:
   - {fileID: 0}
@@ -15025,6 +15118,17 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1206799228}
+        m_MethodName: ToggleUseUDP
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 195004267}
         m_MethodName: ToggleUseUDP
         m_Mode: 0
         m_Arguments:
@@ -20158,7 +20262,7 @@ RectTransform:
   - {fileID: 163110482}
   - {fileID: 2106102708}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -20457,7 +20561,7 @@ Transform:
   - {fileID: 2029870235}
   - {fileID: 2131410309}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2017655150
 MonoBehaviour:

@@ -7,7 +7,8 @@ public class BuildingInstantiator : MonoBehaviour {
     public GameObject[] buildingPositions;
     public GameObject[] buildingPrefabsGood;
     public GameObject[] buildingPrefabsBad;
-    public ScanningDataParser scanningDataParser;
+    //public ScanningDataParser scanningDataParser;
+    public ScanningSliderDataParser scanningSliderDataParser;
 
     public GameObject bldgParent;
     public GameObject[] bldgGOsGood = new GameObject[18];
@@ -54,8 +55,8 @@ public class BuildingInstantiator : MonoBehaviour {
         // compare current frame list values of type and rot with latest UDP json feed
         for (int i = 0; i < 18; i++)
         {
-            int type = scanningDataParser.grid.buildings[i].type;
-            int rot = scanningDataParser.grid.buildings[i].rot;
+            int type = scanningSliderDataParser.grid.buildings[i].type;
+            int rot = scanningSliderDataParser.grid.buildings[i].rot;
 
             if (currentTypeList[i] == type && currentRotList[i] == rot)
             {
