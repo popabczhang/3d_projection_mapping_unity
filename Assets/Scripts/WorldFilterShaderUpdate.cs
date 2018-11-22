@@ -8,6 +8,8 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
     
     public GameObject filterSlider;
     public GameObject inputParentGO;
+    public BoxMorphKeyPts boxMorphKeyPts;
+    public ScanningSliderDataParser scanningSliderDataParser;
 
     public float speed = 0.2f;
 
@@ -49,8 +51,27 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
         for (int i = 0; i < inputGOList.Count; i++)
         {
             Renderer rend = inputGOList[i].GetComponent<Renderer>();
-            Vector3 position = filterSlider.transform.position;
+            Vector3 position = boxMorphKeyPts.TargetBoxKeyPts[0].transform.position * (1.0f - scanningSliderDataParser.sliderValue) + boxMorphKeyPts.TargetBoxKeyPts[1].transform.position * scanningSliderDataParser.sliderValue;
+            GameObject meshGO = inputGOList[i];
+            GameObject meshParentGO = meshGO.transform.parent.parent.gameObject;
+            string meshParentGOName = meshParentGO.name;
+            //Debug.Log(string.Format("meshParentGOName = {0}", meshParentGOName));
+            string nameSuffix = meshParentGOName.Substring(meshParentGOName.Length - 4 - 7, 4); // name has "(Clone)" at the end
+            //Debug.Log(string.Format("nameSuffix = {0}", nameSuffix));
+            Vector3 normal = new Vector3(1f, 1f, 1f);
+            if (nameSuffix == "good")
+            {
+                //Debug.Log("nameSuffix == \"good\"");
+                normal = new Vector3(1f, 0f, 0f);
+            }
+            else
+            {
+                //Debug.Log("nameSuffix != \"good\"");
+                normal = new Vector3(-1f, 0f, 0f);
+            }
+            //Debug.Log(string.Format("normal = {0}", normal));
             rend.material.SetVector("_FilterPosition", position);
+            rend.material.SetVector("_FilterNormal", normal);
         }
     }
 
@@ -61,6 +82,7 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
         float y = filterSlider.transform.position.y;
         float z = filterSlider.transform.position.z;
         filterSlider.transform.SetPositionAndRotation(new Vector3(x, y, z), filterSlider.transform.rotation);
+        scanningSliderDataParser.sliderValue = sliderValue;
     }
 
     public void AutoFilterPosition(bool setAuto)
