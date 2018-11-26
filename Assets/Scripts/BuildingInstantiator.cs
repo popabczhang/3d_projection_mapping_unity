@@ -20,6 +20,9 @@ public class BuildingInstantiator : MonoBehaviour {
 
     public BoxMorphKeyPts boxMorphKeyPts;
 
+    public GameObject waveEffect;
+    public float waveEffectPosY = 0.3f;
+
     void Start ()
     {
         /*
@@ -74,6 +77,7 @@ public class BuildingInstantiator : MonoBehaviour {
                 Destroy(bldgGOsGood[i]);
                 Destroy(bldgGOsBad[i]);
 
+                // instantiate buildings
                 if (type != -1 && buildingPrefabsGood[type] != null)
                 {
                     //Debug.Log(string.Format("instantiating building {0} in the grid with type {1}, rot {2}", i, type, 0));
@@ -84,6 +88,13 @@ public class BuildingInstantiator : MonoBehaviour {
                     bldgGOsBad[i] = Instantiate(buildingPrefabsBad[type], buildingPositions[i].transform.position, Quaternion.Euler(0.0f, -(float)rot * 90.0f + 180.0f, 0.0f), bldgParent.transform);
                     BoxMorphGO c2 = bldgGOsBad[i].AddComponent<BoxMorphGO>();
                     c2.boxMorphKeyPts = boxMorphKeyPts;
+                }
+
+                // instantiate wave effect for only type 20 and 21 (pyramid and empirestate)
+                if (type == 20 || type == 21)
+                {
+                    //Debug.Log(string.Format("instantiating wave effect in the grid with type {1}, rot {2}", i, type, 0));
+                    Instantiate(waveEffect, buildingPositions[i].transform.position + new Vector3(0.0f,waveEffectPosY,0.0f), Quaternion.Euler(0.0f, 0.0f, 0.0f), bldgParent.transform);
                 }
             }
         }
