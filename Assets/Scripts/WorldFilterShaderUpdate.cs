@@ -68,13 +68,13 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
             Vector3 normal = new Vector3(1f, 1f, 1f);
             if (nameSuffix == "good")
             {
-                //Debug.Log("nameSuffix == \"good\"");
-                normal = Vector3.Normalize(Vector3.Cross(pt1 - pt0, pt2 - pt0));
+                //Debug.Log("nameSuffix != \"good\"");
+                normal = Vector3.Normalize(Vector3.Cross(pt1 - pt0, pt2 - pt0)) * -1f;
             }
             else
             {
-                //Debug.Log("nameSuffix != \"good\"");
-                normal = Vector3.Normalize(Vector3.Cross(pt1 - pt0, pt2 - pt0))*-1f;
+                //Debug.Log("nameSuffix == \"good\"");
+                normal = Vector3.Normalize(Vector3.Cross(pt1 - pt0, pt2 - pt0));
             }
             //Debug.Log(string.Format("normal = {0}", normal));
 
