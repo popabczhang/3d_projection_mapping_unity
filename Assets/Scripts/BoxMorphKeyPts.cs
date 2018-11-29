@@ -33,7 +33,8 @@ public class BoxMorphKeyPts : MonoBehaviour {
         h2 = TargetBoxKeyPts[7].transform.position;
 
         // if there's some Box Morph data saved already
-        if (PlayerPrefs.GetFloat("a2x", 9999f) != 9999f)
+        Debug.Log("a2x" + gameObject.name);
+        if (PlayerPrefs.GetFloat("a2x" + gameObject.name, 9999f) != 9999f)
         {
             LoadBoxMorph();
         }
@@ -76,34 +77,34 @@ public class BoxMorphKeyPts : MonoBehaviour {
 
     public void SaveBoxMorph()
     {
-        PlayerPrefs.SetFloat("a2x", a2.x);
-        PlayerPrefs.SetFloat("a2z", a2.z);
-        PlayerPrefs.SetFloat("b2x", b2.x);
-        PlayerPrefs.SetFloat("b2z", b2.z);
-        PlayerPrefs.SetFloat("c2x", c2.x);
-        PlayerPrefs.SetFloat("c2z", c2.z);
-        PlayerPrefs.SetFloat("d2x", d2.x);
-        PlayerPrefs.SetFloat("d2z", d2.z);
-        PlayerPrefs.SetFloat("e2x", e2.x);
-        PlayerPrefs.SetFloat("e2z", e2.z);
-        PlayerPrefs.SetFloat("f2x", f2.x);
-        PlayerPrefs.SetFloat("f2z", f2.z);
-        PlayerPrefs.SetFloat("g2x", g2.x);
-        PlayerPrefs.SetFloat("g2z", g2.z);
-        PlayerPrefs.SetFloat("h2x", h2.x);
-        PlayerPrefs.SetFloat("h2z", h2.z);
+        PlayerPrefs.SetFloat("a2x" + gameObject.name, a2.x);
+        PlayerPrefs.SetFloat("a2z" + gameObject.name, a2.z);
+        PlayerPrefs.SetFloat("b2x" + gameObject.name, b2.x);
+        PlayerPrefs.SetFloat("b2z" + gameObject.name, b2.z);
+        PlayerPrefs.SetFloat("c2x" + gameObject.name, c2.x);
+        PlayerPrefs.SetFloat("c2z" + gameObject.name, c2.z);
+        PlayerPrefs.SetFloat("d2x" + gameObject.name, d2.x);
+        PlayerPrefs.SetFloat("d2z" + gameObject.name, d2.z);
+        PlayerPrefs.SetFloat("e2x" + gameObject.name, e2.x);
+        PlayerPrefs.SetFloat("e2z" + gameObject.name, e2.z);
+        PlayerPrefs.SetFloat("f2x" + gameObject.name, f2.x);
+        PlayerPrefs.SetFloat("f2z" + gameObject.name, f2.z);
+        PlayerPrefs.SetFloat("g2x" + gameObject.name, g2.x);
+        PlayerPrefs.SetFloat("g2z" + gameObject.name, g2.z);
+        PlayerPrefs.SetFloat("h2x" + gameObject.name, h2.x);
+        PlayerPrefs.SetFloat("h2z" + gameObject.name, h2.z);
     }
 
     public void LoadBoxMorph()
     {
-        a2 = new Vector3(PlayerPrefs.GetFloat("a2x", a2.x), a2.y, PlayerPrefs.GetFloat("a2z", a2.z));
-        b2 = new Vector3(PlayerPrefs.GetFloat("b2x", b2.x), b2.y, PlayerPrefs.GetFloat("b2z", b2.z));
-        c2 = new Vector3(PlayerPrefs.GetFloat("c2x", c2.x), c2.y, PlayerPrefs.GetFloat("c2z", c2.z));
-        d2 = new Vector3(PlayerPrefs.GetFloat("d2x", d2.x), d2.y, PlayerPrefs.GetFloat("d2z", d2.z));
-        e2 = new Vector3(PlayerPrefs.GetFloat("e2x", e2.x), e2.y, PlayerPrefs.GetFloat("e2z", e2.z));
-        f2 = new Vector3(PlayerPrefs.GetFloat("f2x", f2.x), f2.y, PlayerPrefs.GetFloat("f2z", f2.z));
-        g2 = new Vector3(PlayerPrefs.GetFloat("g2x", g2.x), g2.y, PlayerPrefs.GetFloat("g2z", g2.z));
-        h2 = new Vector3(PlayerPrefs.GetFloat("h2x", h2.x), h2.y, PlayerPrefs.GetFloat("h2z", h2.z));
+        a2 = new Vector3(PlayerPrefs.GetFloat("a2x" + gameObject.name, a2.x), a2.y, PlayerPrefs.GetFloat("a2z" + gameObject.name, a2.z));
+        b2 = new Vector3(PlayerPrefs.GetFloat("b2x" + gameObject.name, b2.x), b2.y, PlayerPrefs.GetFloat("b2z" + gameObject.name, b2.z));
+        c2 = new Vector3(PlayerPrefs.GetFloat("c2x" + gameObject.name, c2.x), c2.y, PlayerPrefs.GetFloat("c2z" + gameObject.name, c2.z));
+        d2 = new Vector3(PlayerPrefs.GetFloat("d2x" + gameObject.name, d2.x), d2.y, PlayerPrefs.GetFloat("d2z" + gameObject.name, d2.z));
+        e2 = new Vector3(PlayerPrefs.GetFloat("e2x" + gameObject.name, e2.x), e2.y, PlayerPrefs.GetFloat("e2z" + gameObject.name, e2.z));
+        f2 = new Vector3(PlayerPrefs.GetFloat("f2x" + gameObject.name, f2.x), f2.y, PlayerPrefs.GetFloat("f2z" + gameObject.name, f2.z));
+        g2 = new Vector3(PlayerPrefs.GetFloat("g2x" + gameObject.name, g2.x), g2.y, PlayerPrefs.GetFloat("g2z" + gameObject.name, g2.z));
+        h2 = new Vector3(PlayerPrefs.GetFloat("h2x" + gameObject.name, h2.x), h2.y, PlayerPrefs.GetFloat("h2z" + gameObject.name, h2.z));
 
         TargetBoxKeyPts[0].transform.position = a2;
         TargetBoxKeyPts[1].transform.position = b2;
