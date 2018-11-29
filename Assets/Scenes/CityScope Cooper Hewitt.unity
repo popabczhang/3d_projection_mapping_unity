@@ -2491,7 +2491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &343994588
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2503,8 +2503,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2008701363}
   - {fileID: 929955919}
+  - {fileID: 2008701363}
   m_Father: {fileID: 645745702}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -7012,8 +7012,10 @@ GameObject:
   - component: {fileID: 929955922}
   - component: {fileID: 929955921}
   - component: {fileID: 929955920}
+  - component: {fileID: 929955923}
+  - component: {fileID: 929955924}
   m_Layer: 5
-  m_Name: Right  text
+  m_Name: Left text_Shared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7031,13 +7033,13 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 343994588}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 480, y: 70}
+  m_AnchoredPosition: {x: -5, y: 70}
   m_SizeDelta: {x: 300, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &929955920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7052,6 +7054,7 @@ MonoBehaviour:
   scaleDelta: 0.5
   scanningSliderDataParser: {fileID: 195004267}
   isLeft: 0
+  sliderLength: 2500
 --- !u!114 &929955921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7074,18 +7077,20 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: eec7b5fdbef43472e9a7b51b14257dcb, type: 3}
-    m_FontSize: 27
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 5
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "SHARED \nWORLD"
+  m_Text: 'SHARED
+
+    WORLD'
 --- !u!222 &929955922
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7094,6 +7099,30 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 929955918}
   m_CullTransparentMesh: 0
+--- !u!65 &929955923
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929955918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 500, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &929955924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929955918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff21a3b859de1b44fb629a9e1292267d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 534669904}
 --- !u!1 &938510684
 GameObject:
   m_ObjectHideFlags: 0
@@ -10693,7 +10722,7 @@ GameObject:
   - component: {fileID: 1432818224}
   - component: {fileID: 1432818225}
   m_Layer: 0
-  m_Name: Box Morph
+  m_Name: Box Morph Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14674,8 +14703,10 @@ GameObject:
   - component: {fileID: 2008701366}
   - component: {fileID: 2008701365}
   - component: {fileID: 2008701364}
+  - component: {fileID: 2008701367}
+  - component: {fileID: 2008701368}
   m_Layer: 5
-  m_Name: Left text
+  m_Name: Right text_Private
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14693,13 +14724,13 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 343994588}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -480, y: 70}
+  m_AnchoredPosition: {x: 5, y: 70}
   m_SizeDelta: {x: 300, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2008701364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14714,6 +14745,7 @@ MonoBehaviour:
   scaleDelta: 0.5
   scanningSliderDataParser: {fileID: 195004267}
   isLeft: 1
+  sliderLength: 2500
 --- !u!114 &2008701365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14736,18 +14768,20 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: eec7b5fdbef43472e9a7b51b14257dcb, type: 3}
-    m_FontSize: 27
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "PRIVATE \nWORLD"
+  m_Text: 'PRIVATE
+
+    WORLD'
 --- !u!222 &2008701366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14756,6 +14790,30 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008701362}
   m_CullTransparentMesh: 0
+--- !u!65 &2008701367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008701362}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 500, y: 100, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2008701368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008701362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff21a3b859de1b44fb629a9e1292267d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 534669904}
 --- !u!1 &2010327216
 GameObject:
   m_ObjectHideFlags: 0

@@ -65,7 +65,7 @@
 			{
 				if (checkVisability(i.worldPos))discard;
 				// sample the texture
-				fixed4 col = tex2D(_MainTex, i.uv) + step(0, dot(i.worldPos - (_FilterPosition - _FilterNormal * 0.001), _FilterNormal)) * fixed4(1, 1, 1, 1);
+				fixed4 col = tex2D(_MainTex, i.uv) + step(0, dot(i.worldPos - (_FilterPosition - _FilterNormal * 0.0005), _FilterNormal)) * fixed4(1, 1, 1, 1);
 				// apply fog
 				UNITY_APPLY_FOG(i.fogCoord, col);
 				return col;
