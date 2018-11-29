@@ -115,5 +115,26 @@ public class BoxMorphKeyPts : MonoBehaviour {
         TargetBoxKeyPts[7].transform.position = h2;
     }
 
+    public void ResetBoxMorph()
+    {
+        a2 = OriginBoxKeyPts[0].transform.position;
+        b2 = OriginBoxKeyPts[1].transform.position;
+        c2 = OriginBoxKeyPts[2].transform.position;
+        d2 = OriginBoxKeyPts[3].transform.position;
+        e2 = OriginBoxKeyPts[4].transform.position;
+        f2 = OriginBoxKeyPts[5].transform.position;
+        g2 = OriginBoxKeyPts[6].transform.position;
+        h2 = OriginBoxKeyPts[7].transform.position;
+
+        TargetBoxKeyPts[0].transform.position = a2;
+        TargetBoxKeyPts[1].transform.position = b2;
+        TargetBoxKeyPts[2].transform.position = c2;
+        TargetBoxKeyPts[3].transform.position = d2;
+        TargetBoxKeyPts[4].transform.position = e2;
+        TargetBoxKeyPts[5].transform.position = f2;
+        TargetBoxKeyPts[6].transform.position = g2;
+        TargetBoxKeyPts[7].transform.position = h2;
+    }
+
 
 }
