@@ -7,10 +7,22 @@ public class ManuallyAddBoxMorphGO : MonoBehaviour
 
     public BoxMorphKeyPts boxMorphKeyPts;
 
+    private BoxMorphGO boxMorphGO;
+
     // Use this for initialization
     void Start () {
-        BoxMorphGO c1 = this.gameObject.AddComponent<BoxMorphGO>();
-        c1.boxMorphKeyPts = boxMorphKeyPts;
+
+        // find all meshfilter component
+        Transform[] AllChildren = GetComponentsInChildren<Transform>();
+        foreach (Transform Child in AllChildren)
+        {
+            if (Child.gameObject.GetComponent<MeshFilter>() != null)
+            {
+                boxMorphGO = Child.gameObject.AddComponent<BoxMorphGO>();
+                boxMorphGO.boxMorphKeyPts = boxMorphKeyPts;
+            }
+        }
+
     }
 
 }

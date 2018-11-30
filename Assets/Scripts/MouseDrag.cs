@@ -2,14 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyPointDrag : MonoBehaviour {
+public class MouseDrag : MonoBehaviour {
 
     // ref: https://answers.unity.com/questions/12322/drag-gameobject-with-mouse.html
 
     public Camera cam;
+    public bool enableX = true;
+    public bool enableZ = true;
     private Vector3 screenPoint;
     private Vector3 offset;
     private float y;
+
+    void Start()
+    {
+        if(cam == null)
+        {
+            cam = Camera.main;
+        }
+        //Debug.Log(cam);
+    }
 
     //[RequireComponent(typeof(MeshCollider))]
     void OnMouseDown()
@@ -28,13 +39,22 @@ public class KeyPointDrag : MonoBehaviour {
     void OnMouseDrag()
     {
         //Debug.Log("OnMouseDrag");
-
         Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
-
         Vector3 curPosition = cam.ScreenToWorldPoint(curScreenPoint) + offset;
-
+        
         // apply curPosition and reset y to recorded value
-        transform.position = new Vector3(curPosition.x, y, curPosition.z);
+        if (enableX && enableZ)
+        {
+            transform.position = new Vector3(curPosition.x, y, curPosition.z);
+        }
+        else if (enableX && !enableZ)
+        {
+            transform.position = new Vector3(curPosition.x, y, transform.position.z);
+        }
+        else if (!enableX && enableZ)
+        {
+            transform.position = new Vector3(transform.position.x, y, curPosition.z);
+        }
 
     }
 }

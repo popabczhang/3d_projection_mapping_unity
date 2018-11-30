@@ -33,7 +33,7 @@ public class BoxMorphKeyPts : MonoBehaviour {
         h2 = TargetBoxKeyPts[7].transform.position;
 
         // if there's some Box Morph data saved already
-        Debug.Log("a2x" + gameObject.name);
+        //Debug.Log("a2x" + gameObject.name);
         if (PlayerPrefs.GetFloat("a2x" + gameObject.name, 9999f) != 9999f)
         {
             LoadBoxMorph();
