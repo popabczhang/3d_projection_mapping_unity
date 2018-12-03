@@ -18,6 +18,8 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
     public float xRight = 1.53f;
 
     public float sliderExtendRatio = 1.1429f; // extend ratio = length of bounding box of all roads / length of bounding box of all buildings
+    public float sliderStartOffset = 0.0f;
+    public float sliderEndOffset = 0.0f;
 
     void Update()
     {
