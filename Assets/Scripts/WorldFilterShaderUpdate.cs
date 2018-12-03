@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WorldFilterShaderUpdate : MonoBehaviour {
 
@@ -18,8 +19,22 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
     public float xRight = 1.53f;
 
     public float sliderExtendRatio = 1.1429f; // extend ratio = length of bounding box of all roads / length of bounding box of all buildings
-    public float sliderStartOffset = 0.0f;
-    public float sliderEndOffset = 0.0f;
+    public float sliderOffsetLeft = 0.0f;
+    public float sliderOffsetRight = 0.0f;
+    public InputField sliderOffsetLeftInput;
+    public InputField sliderOffsetRightInput;
+
+    private float sliderValueOffset;
+
+    private void Start()
+    {
+        if (PlayerPrefs.GetFloat("sliderOffsetLeft", 9999f) != 9999f)
+        {
+            LoadSliderOffsets();
+        }
+        sliderOffsetLeftInput.text = string.Format("{0}", sliderOffsetLeft);
+        sliderOffsetRightInput.text = string.Format("{0}", sliderOffsetRight);
+    }
 
     void Update()
     {
@@ -54,8 +69,12 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
         // loop all GO in inputGOList
         for (int i = 0; i < inputGOList.Count; i++)
         {
+            // slider value offset
+            sliderValueOffset = scanningSliderDataParser.sliderValue * (1.0f - sliderOffsetLeft + sliderOffsetRight) + sliderOffsetLeft;
+
+            // calclulate shader needed position and normal
             Renderer rend = inputGOList[i].GetComponent<Renderer>();
-            Vector3 position = boxMorphKeyPts.TargetBoxKeyPts[0].transform.position * (1.0f - scanningSliderDataParser.sliderValue) + boxMorphKeyPts.TargetBoxKeyPts[1].transform.position * scanningSliderDataParser.sliderValue;
+            Vector3 position = boxMorphKeyPts.TargetBoxKeyPts[0].transform.position * (1.0f - sliderValueOffset) + boxMorphKeyPts.TargetBoxKeyPts[1].transform.position * sliderValueOffset;
             GameObject meshGO = inputGOList[i];
             GameObject meshParentGO = meshGO.transform.parent.parent.gameObject;
             string meshParentGOName = meshParentGO.name;
@@ -63,9 +82,9 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
             string nameSuffix = meshParentGOName.Substring(meshParentGOName.Length - 4 - 7, 4); // name has "(Clone)" at the end
             //Debug.Log(string.Format("nameSuffix = {0}", nameSuffix));
             Vector3 pt0 = position;
-            Vector3 pt1 = boxMorphKeyPts.TargetBoxKeyPts[3].transform.position * (1.0f - scanningSliderDataParser.sliderValue) + boxMorphKeyPts.TargetBoxKeyPts[2].transform.position * scanningSliderDataParser.sliderValue;
-            Vector3 pt4 = boxMorphKeyPts.TargetBoxKeyPts[4].transform.position * (1.0f - scanningSliderDataParser.sliderValue) + boxMorphKeyPts.TargetBoxKeyPts[5].transform.position * scanningSliderDataParser.sliderValue;
-            Vector3 pt5 = boxMorphKeyPts.TargetBoxKeyPts[7].transform.position * (1.0f - scanningSliderDataParser.sliderValue) + boxMorphKeyPts.TargetBoxKeyPts[6].transform.position * scanningSliderDataParser.sliderValue;
+            Vector3 pt1 = boxMorphKeyPts.TargetBoxKeyPts[3].transform.position * (1.0f - sliderValueOffset) + boxMorphKeyPts.TargetBoxKeyPts[2].transform.position * sliderValueOffset;
+            Vector3 pt4 = boxMorphKeyPts.TargetBoxKeyPts[4].transform.position * (1.0f - sliderValueOffset) + boxMorphKeyPts.TargetBoxKeyPts[5].transform.position * sliderValueOffset;
+            Vector3 pt5 = boxMorphKeyPts.TargetBoxKeyPts[7].transform.position * (1.0f - sliderValueOffset) + boxMorphKeyPts.TargetBoxKeyPts[6].transform.position * sliderValueOffset;
             Vector3 pt2 = (pt4 + pt5) / 2f;
             Vector3 normal = new Vector3(1f, 1f, 1f);
             if (nameSuffix == "good")
@@ -104,6 +123,38 @@ public class WorldFilterShaderUpdate : MonoBehaviour {
     public void AutoFilterPosition(bool setAuto)
     {
         auto = true;
+    }
+
+    public void SetSliderOffsetLeft(string value)
+    {
+        sliderOffsetLeft = float.Parse(value);
+    }
+
+    public void SetSliderOffsetRight(string value)
+    {
+        sliderOffsetRight = float.Parse(value);
+    }
+
+    public void SaveSliderOffsets()
+    {
+        PlayerPrefs.SetFloat("sliderOffsetLeft", sliderOffsetLeft);
+        PlayerPrefs.SetFloat("sliderOffsetRight", sliderOffsetRight);
+    }
+
+    public void LoadSliderOffsets()
+    {
+        sliderOffsetLeft = PlayerPrefs.GetFloat("sliderOffsetLeft", sliderOffsetLeft);
+        sliderOffsetRight = PlayerPrefs.GetFloat("sliderOffsetRight", sliderOffsetLeft);
+        sliderOffsetLeftInput.text = string.Format("{0}", sliderOffsetLeft);
+        sliderOffsetRightInput.text = string.Format("{0}", sliderOffsetRight);
+    }
+
+    public void ResetSliderOffsets()
+    {
+        sliderOffsetLeft = 0.0f;
+        sliderOffsetRight = 0.0f;
+        sliderOffsetLeftInput.text = string.Format("{0}", sliderOffsetLeft);
+        sliderOffsetRightInput.text = string.Format("{0}", sliderOffsetRight);
     }
 
 }
