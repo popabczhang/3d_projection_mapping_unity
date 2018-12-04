@@ -1,10 +1,8 @@
 # 3d_projection_mapping_unity
-3D projection mapping for CityScope mobility exhibition in Cooper Hewitt design museum in New York City Dec 2018. 
-
-
-# Video Tutorials
-
-## Projection Calibration Tutorial
+3D projection mapping for CityScope mobility exhibition in Cooper Hewitt design museum in New York City Dec 2018.  
+  
+  
+# Projection Calibration Tutorial
 For 1st Time On-Site Setup and Calibration:  
   
 	1. Download the release v1.0.0 "CityScope_Cooper_Hewitt_Top_Projection_Unity_V1.0.0.app.zip" from github.com/popabczhang/3d_projection_mapping_unity, unzip and put the app on the desktop of the 4K projector display;  
@@ -36,12 +34,12 @@ For 1st Time On-Site Setup and Calibration:
 		b. Left and right side videos: these are 2D objects at height of table top, so there are only 4 key points marked yellow;  
       
 		c. Slider: 4 orange key points that #0 should be at closer-left corner of the road; #1 should be at the closer-right corner of the road; #2 should be at the perpendicular point from #1 to bottom edge of the table; #3 should be at the perpendicular point from #1 to bottom edge of the table. 
-
-
+  
+  
 (to be continued ... ) 
-
-
-
+  
+  
+  
   
   
 # Updates
