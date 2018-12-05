@@ -33,10 +33,19 @@ For 1st Time On-Site Setup and Calibration:
       
 		b. Left and right side videos: these are 2D objects at height of table top, so there are only 4 key points marked yellow;  
       
-		c. Slider: 4 orange key points that #0 should be at closer-left corner of the road; #1 should be at the closer-right corner of the road; #2 should be at the perpendicular point from #1 to bottom edge of the table; #3 should be at the perpendicular point from #1 to bottom edge of the table. 
+		c. Slider: 4 orange key points that #0 should be at closer-left corner of the road; #1 should be at the closer-right corner of the road; #2 should be at the perpendicular point from #1 to bottom edge of the table; #3 should be at the perpendicular point from #1 to bottom edge of the table; Drag the megenta box up and down for better alignment of the slider texts; 
+  
+	10. When all the keystone calibration is finished, click "Save Calibration" button to save all keystone keypoint positions locally. Press "Load Calibration" and "Reset Calibration" to load local setting and reset to program initiate setting;
+  
+	11. To calibrate the world filter section line (white) on buildings if not align perfectly with the Processing section line: in the main UI menu, input the "Slider Offset Left" and "Slider Offset Right" (-0.500~0.500) to adjust where left and right ends are. Press "Save" to save this setting locally. 
+	
+	12. Press "u" again to dismiss the calibration UI. (END)
   
   
-(to be continued ... ) 
+  
+  
+  
+  
   
   
   
