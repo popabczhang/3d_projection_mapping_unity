@@ -5,52 +5,49 @@
 # Projection Calibration Tutorial
 For 1st Time On-Site Setup and Calibration:  
   
-	1. Download the release v1.0.0 "CityScope_Cooper_Hewitt_Top_Projection_Unity_V1.0.0.app.zip" from github.com/popabczhang/3d_projection_mapping_unity, unzip and put the app on the desktop of the 4K projector display;  
+1. Download the release v1.0.0 "CityScope_Cooper_Hewitt_Top_Projection_Unity_V1.0.0.app.zip" from github.com/popabczhang/3d_projection_mapping_unity, unzip and put the app on the desktop of the 4K projector display;  
+  
+2. Set up batch script accordingly (please ask Yasushi);  
+  
+3. Run "CityScope_Cooper_Hewitt_Top_Projection_Unity_V1.0.0.app" on desktop;  
+  
+4. In the popup Unity display setup window, select resolution "3840*2160"(4K), select quality "very low", check "show this window only when hold alt", and hit "run";  
+  
+5. Press "u" on the keyboard to toggle on the calibration UI (there's a reminder message for this at very beginning, which will close in 5 sec);  
+  
+6. Make sure that "Use UDP" is checked to receive UDP from good computer python scanner;  
+  
+7. 3D camera to physical projector calibration (although we have 3D bounding box morphing calibration later, to reduce discrepancy between the linear morph and the perspective principle, we would like to match the 3D camera in Unity to the physical projector rather well, but go too crazy about it though):  
+  
+  a. Firstly, to start, in the "Camera Input" menu (the menu with dark background), refer to the diagram, measure the physical dimensions of the projector portion and rotation, and input the parameters of the camera position and rotation accordingly (note that we would like to set up the projector as orthogonal as possible to reduce the necessity for have rotations);  
+  
+  b. Then, in the lower part of main UI menu (the menu with light gray background), there are a set of buttons for more fine-grained calibration of position, rotation, and field of view angle of the 3D camera:  
     
-	2. Set up batch script accordingly (please ask Yasushi);  
+   * Button explanations: "← → ↑ ↓": move camera left, right, up and down (the image will move in the opposite direction); "ʘ X": move camera heigher or lower; "↻ ↺": rotate the camera CW or CWW; "▲ ▼": "nod" the camera's "head" up or down; "〈 <": field of view wider or narrorer; "+ -": double or half the step of all changes above;
     
-	3. Run "CityScope_Cooper_Hewitt_Top_Projection_Unity_V1.0.0.app" on desktop;  
-    
-	4. In the popup Unity display setup window, select resolution "3840*2160"(4K), select quality "very low", check "show this window only when hold alt", and hit "run";  
-    
-	5. Press "u" on the keyboard to toggle on the calibration UI (there's a reminder message for this at very beginning, which will close in 5 sec);  
-    
-	6. Make sure that "Use UDP" is checked to receive UDP from good computer python scanner;  
-    
-	7. 3D camera to physical projector calibration (although we have 3D bounding box morphing calibration later, to reduce discrepancy between the linear morph and the perspective principle, we would like to match the 3D camera in Unity to the physical projector rather well, but go too crazy about it though):  
-
-		a. Firstly, to start, in the "Camera Input" menu (the menu with dark background), refer to the diagram, measure the physical dimensions of the projector portion and rotation, and input the parameters of the camera position and rotation accordingly (note that we would like to set up the projector as orthogonal as possible to reduce the necessity for have rotations);  
-    
-		b. Then, in the lower part of main UI menu (the menu with light gray background), there are a set of buttons for more fine-grained calibration of position, rotation, and field of view angle of the 3D camera:  
-
-			1) Button explanations: "": move camera left, right, up and down (the image will move in the opposite direction; "": angle;  
+8. When the image is more or less match with the physical table, save the camera setting by click "Save" button in the "Cam" session of the main UI menu;  
+  
+9. Now we can start the fine-grained calibration by morph or keystone the geometry, check "Calibrate" at the top left of the main menu to show calibration key points on following objects:  
+  
+  a. All buildings: because buildings are three dimensional, we need to do 3D box-morphing with 8 key points. The 8 key points are marked magenta and labeled with 0~7 in order (if you stand at the slider side of the table, 0:lower-closer-left; 1:lower-closer-right; 2:lower-farther-right; 3:lower-farther-left; 4:higher-closer-left; 5:higher-closer-right; 6:higher-farther-right; 7:higher-farther-left); Drag each of the key points using mouse to have it match the 8 corners in physical world (use the calibration Lego piece Guadalupe made for the precis height and position of the corners);  
       
-	8. When the image is more or less match with the physical table, save the camera setting by click "Save" button in the "Cam" session of the main UI menu;  
-  
-	9. Now we can start the fine-grained calibration by morph or keystone the geometry, check "Calibrate" at the top left of the main menu to show calibration key points on following objects:  
-  
-		a. All buildings: because buildings are three dimensional, we need to do 3D box-morphing with 8 key points. The 8 key points are marked magenta and labeled with 0~7 in order (if you stand at the slider side of the table, 0:lower-closer-left; 1:lower-closer-right; 2:lower-farther-right; 3:lower-farther-left; 4:higher-closer-left; 5:higher-closer-right; 6:higher-farther-right; 7:higher-farther-left); Drag each of the key points using mouse to have it match the 8 corners in physical world (use the calibration Lego piece Guadalupe made for the precis height and position of the corners);  
+  b. Left and right side videos: these are 2D objects at height of table top, so there are only 4 key points marked yellow;  
       
-		b. Left and right side videos: these are 2D objects at height of table top, so there are only 4 key points marked yellow;  
-      
-		c. Slider: 4 orange key points that #0 should be at closer-left corner of the road; #1 should be at the closer-right corner of the road; #2 should be at the perpendicular point from #1 to bottom edge of the table; #3 should be at the perpendicular point from #1 to bottom edge of the table; Drag the megenta box up and down for better alignment of the slider texts; 
+  c. Slider: 4 orange key points that #0 should be at closer-left corner of the road; #1 should be at the closer-right corner of the road; #2 should be at the perpendicular point from #1 to bottom edge of the table; #3 should be at the perpendicular point from #1 to bottom edge of the table; Drag the megenta box up and down for better alignment of the slider texts; 
   
-	10. When all the keystone calibration is finished, click "Save Calibration" button to save all keystone keypoint positions locally. Press "Load Calibration" and "Reset Calibration" to load local setting and reset to program initiate setting;
+10. When all the keystone calibration is finished, click "Save Calibration" button to save all keystone keypoint positions locally. Press "Load Calibration" and "Reset Calibration" to load local setting and reset to program initiate setting;
   
-	11. To calibrate the world filter section line (white) on buildings if not align perfectly with the Processing section line: in the main UI menu, input the "Slider Offset Left" and "Slider Offset Right" (-0.500~0.500) to adjust where left and right ends are. Press "Save" to save this setting locally. 
-	
-	12. Press "u" again to dismiss the calibration UI. (END)
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+11. To calibrate the world filter section line (white) on buildings if not align perfectly with the Processing section line: in the main UI menu, input the "Slider Offset Left" and "Slider Offset Right" (-0.500~0.500) to adjust where left and right ends are. Press "Save" to save this setting locally. 
+    
+12. Press "u" again to dismiss the calibration UI. (END)  
+    
+    
+    
+    
+    
+    
+    
+    
 # Updates
 
 ## Oct 4th, 2018
